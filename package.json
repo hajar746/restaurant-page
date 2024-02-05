@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "restaurant home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hajar746/restaurant-page.git"
+  },
+  "author": "hajar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hajar746/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/hajar746/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
