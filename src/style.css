@@ -1,6 +1,31 @@
 body {
   background: url("/src/donut.jpg") no-repeat;
   background-size: cover;
+  font-family: "Ultra", serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.nav button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px #d2738c;
+  font-family: "Ultra", serif;
+}
+
+.nav button:hover {
+  cursor: pointer;
+  box-shadow: none;
+  transform: translateY(4px);
+  background-color: #e393a8;
 }
 
 #content {
@@ -9,4 +34,30 @@ body {
   align-items: center;
   flex-direction: column;
   color: white;
+  font-size: 1.5rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#content h1 {
+  margin: 0;
+  font-weight: 400;
+  text-shadow: 4px 4px #d2738c;
+}
+
+/* MENU */
+.card {
+  width: 200px;
+  height: 350px;
+  background-color: white;
+}
+
+@media (max-width: 880px) {
+  body {
+    background: url("/src/donut.jpg") repeat;
+    background-size: contain;
+  }
 }
