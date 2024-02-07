@@ -1,3 +1,16 @@
+import Chocolate from "./chocolate.jpg";
+import Lemon from "./lemon.jpg";
+import Confetti from "./confetti.jpg";
+import Glazed from "./glazed.jpg";
+import Jelly from "./jelly.jpg";
+import Caramel from "./caramel.jpg";
+import Pastel from "./pastel.jpg";
+import Assorted from "./assorted.jpg";
+import Fruit from "./fruit.jpg";
+import Sugar from "./Sugar.jpg";
+import Coconut from "./coconut.jpg";
+import Cinnamon from "./cinnamon.jpg";
+
 export function donutPage(div) {
   const allFlavors = [];
   //   FLAVOR CONSTRUCTOR
@@ -20,29 +33,29 @@ export function donutPage(div) {
     );
   };
 
-  const chocolate = new Flavors("src/chocolate.jpg", "Chocolate");
+  const chocolate = new Flavors(Chocolate, "Chocolate");
   chocolate.addToMenu();
-  const lemon = new Flavors("src/lemon.jpg", "Lemon");
+  const lemon = new Flavors(Lemon, "Lemon");
   lemon.addToMenu();
-  const confetti = new Flavors("src/confetti.jpg", "Confetti");
+  const confetti = new Flavors(Confetti, "Confetti");
   confetti.addToMenu();
-  const glazed = new Flavors("src/glazed.jpg", "Glazed");
+  const glazed = new Flavors(Glazed, "Glazed");
   glazed.addToMenu();
-  const jelly = new Flavors("src/jelly.jpg", "Jelly-filled");
+  const jelly = new Flavors(Jelly, "Jelly-filled");
   jelly.addToMenu();
-  const caramel = new Flavors("src/caramel.jpg", "Caramel");
+  const caramel = new Flavors(Caramel, "Caramel");
   caramel.addToMenu();
-  const pastel = new Flavors("src/pastel.jpg", "Pastel");
+  const pastel = new Flavors(Pastel, "Pastel");
   pastel.addToMenu();
-  const assorted = new Flavors("src/assorted.jpg", "Assorted");
+  const assorted = new Flavors(Assorted, "Assorted");
   assorted.addToMenu();
-  const fruit = new Flavors("src/fruit.jpg", "Fruit");
+  const fruit = new Flavors(Fruit, "Fruit");
   fruit.addToMenu();
-  const sugar = new Flavors("src/sugar.jpg", "Sugar");
+  const sugar = new Flavors(Sugar, "Sugar");
   sugar.addToMenu();
-  const coconut = new Flavors("src/coconut.jpg", "Coconut");
+  const coconut = new Flavors(Coconut, "Coconut");
   coconut.addToMenu();
-  const cinnamon = new Flavors("src/cinnamon.jpg", "Cinnamon");
+  const cinnamon = new Flavors(Cinnamon, "Cinnamon");
   cinnamon.addToMenu();
 }
 
