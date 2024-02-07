@@ -35,7 +35,7 @@ export function donutPage(div) {
   pastel.addToMenu();
 }
 
-export const pageTitle = document.createElement("h1");
+const pageTitle = document.createElement("h1");
 
 export function addDonutTitle(nav) {
   pageTitle.textContent = "Flavors";
