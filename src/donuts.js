@@ -1,7 +1,5 @@
 export function donutPage(div) {
   const allFlavors = [];
-  const menu = document.createElement("div");
-
   //   FLAVOR CONSTRUCTOR
   function Flavors(image, flavor) {
     this.image = image;
@@ -10,12 +8,12 @@ export function donutPage(div) {
   //   METHOD TO ADD FLAVOR CARD TO MENU
   Flavors.prototype.addToMenu = function () {
     allFlavors.push(this);
-    menu.insertAdjacentHTML(
+    div.insertAdjacentHTML(
       "beforeend",
       `
     <div class="card">
-      <img src="${this.image}">
-      <h2>${this.flavor}</h2>
+      <img src="${this.image}" class='donut-imgs'>
+      <p>${this.flavor}</p>
     </div>
     `
     );
@@ -31,11 +29,21 @@ export function donutPage(div) {
   glazed.addToMenu();
   const jelly = new Flavors("/src/jelly.jpg", "Jelly-filled");
   jelly.addToMenu();
-  const caramel = new Flavors("/src/caramel.jpg");
+  const caramel = new Flavors("/src/caramel.jpg", "Caramel");
   caramel.addToMenu();
-  const pastel = new Flavors("/src/pastel.jpg");
+  const pastel = new Flavors("/src/pastel.jpg", "Pastel");
   pastel.addToMenu();
+}
 
-  //   ADD MENU TO DIV
-  div.appendChild(menu);
+export const pageTitle = document.createElement("h1");
+
+export function addDonutTitle(nav) {
+  pageTitle.textContent = "Flavors";
+  pageTitle.classList.add("donut-title");
+  pageTitle.style.display = "block";
+  nav.parentNode.insertBefore(pageTitle, nav.nextSibling);
+}
+
+export function removeDonutTile() {
+  pageTitle.style.display = "none";
 }

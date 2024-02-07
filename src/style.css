@@ -42,17 +42,48 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#content h1 {
+#content h1,
+.donut-title {
   margin: 0;
   font-weight: 400;
   text-shadow: 4px 4px #d2738c;
 }
 
 /* MENU */
+.menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.donut-title {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
 .card {
-  width: 200px;
-  height: 350px;
+  width: 250px;
+  height: 400px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+}
+
+.donut-imgs {
+  width: 180px;
+  height: 300px;
 }
 
 @media (max-width: 880px) {

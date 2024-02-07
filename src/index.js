@@ -1,17 +1,17 @@
 import { loadPage } from "./loadPage";
 import "./style.css";
 import { donutPage } from "./donuts";
+import { addDonutTitle, removeDonutTile } from "./donuts";
 
 const div = document.querySelector("#content");
 const navbar = document.querySelector("nav");
+navbar.classList.add("nav");
 const btnHome = document.querySelector(".home");
 const btnDonuts = document.querySelector(".donuts");
 const btnAbout = document.querySelector(".about");
 
 // HOME PAGE
 function addElements() {
-  navbar.classList.add("nav");
-
   const headline = document.createElement("h1");
   headline.textContent = "Donut Dreamz";
   headline.classList.add("content");
@@ -28,8 +28,21 @@ function addElements() {
 }
 
 loadPage(addElements);
-btnHome.addEventListener("click", addElements);
+
+// HOME PAGE
+btnHome.addEventListener("click", function () {
+  removeDonutTile();
+  div.innerHTML = "";
+  div.classList.remove("menu");
+  div.setAttribute("id", "content");
+  addElements();
+});
+
+// DONUT PAGE
 btnDonuts.addEventListener("click", function () {
   div.innerHTML = "";
+  div.removeAttribute("id");
+  div.classList.add("menu");
+  addDonutTitle(navbar);
   donutPage(div);
 });
