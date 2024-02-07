@@ -1,4 +1,4 @@
-// BY HAJAR A
+// BY HAJAR
 
 import { loadPage } from "./loadPage";
 import "./style.css";

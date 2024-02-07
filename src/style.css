@@ -50,19 +50,26 @@ body {
   text-shadow: 4px 4px #d2738c;
 }
 
-.shop {
+.shop,
+.buy {
   background-color: #e393a8;
   box-shadow: 5px 5px white;
   border-radius: 6px;
   padding: 1rem 2rem;
   border: none;
+  font-family: "Ultra", serif;
 }
 
-.shop:hover {
+.shop:hover,
+.buy:hover {
   cursor: pointer;
   background-color: #ecb0c0;
   box-shadow: none;
   transform: translateY(4px);
+}
+
+.buy {
+  text-shadow: 1px 1px white;
 }
 
 /* MENU */

@@ -14,6 +14,7 @@ export function donutPage(div) {
     <div class="card">
       <img src="${this.image}" class='donut-imgs'>
       <p>${this.flavor}</p>
+      <button class='buy'>Buy now</button>
     </div>
     `
     );
@@ -33,6 +34,16 @@ export function donutPage(div) {
   caramel.addToMenu();
   const pastel = new Flavors("/src/pastel.jpg", "Pastel");
   pastel.addToMenu();
+  const assorted = new Flavors("/src/assorted.jpg", "Assorted");
+  assorted.addToMenu();
+  const fruit = new Flavors("/src/fruit.jpg", "Fruit");
+  fruit.addToMenu();
+  const sugar = new Flavors("/src/sugar.jpg", "Sugar");
+  sugar.addToMenu();
+  const coconut = new Flavors("/src/coconut.jpg", "Coconut");
+  coconut.addToMenu();
+  const cinnamon = new Flavors("/src/cinnamon.jpg", "Cinnamon");
+  cinnamon.addToMenu();
 }
 
 const pageTitle = document.createElement("h1");
