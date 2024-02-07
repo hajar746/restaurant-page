@@ -11,7 +11,6 @@ const navbar = document.querySelector("nav");
 const btnHome = document.querySelector(".home");
 const btnDonuts = document.querySelector(".donuts");
 const btnAbout = document.querySelector(".about");
-const btnShop = document.querySelector(".shop");
 navbar.classList.add("nav");
 
 // HOME PAGE

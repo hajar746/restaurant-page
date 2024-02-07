@@ -20,29 +20,29 @@ export function donutPage(div) {
     );
   };
 
-  const chocolate = new Flavors("/src/chocolate.jpg", "Chocolate");
+  const chocolate = new Flavors("src/chocolate.jpg", "Chocolate");
   chocolate.addToMenu();
-  const lemon = new Flavors("/src/lemon.jpg", "Lemon");
+  const lemon = new Flavors("src/lemon.jpg", "Lemon");
   lemon.addToMenu();
-  const confetti = new Flavors("/src/confetti.jpg", "Confetti");
+  const confetti = new Flavors("src/confetti.jpg", "Confetti");
   confetti.addToMenu();
-  const glazed = new Flavors("/src/glazed.jpg", "Glazed");
+  const glazed = new Flavors("src/glazed.jpg", "Glazed");
   glazed.addToMenu();
-  const jelly = new Flavors("/src/jelly.jpg", "Jelly-filled");
+  const jelly = new Flavors("src/jelly.jpg", "Jelly-filled");
   jelly.addToMenu();
-  const caramel = new Flavors("/src/caramel.jpg", "Caramel");
+  const caramel = new Flavors("src/caramel.jpg", "Caramel");
   caramel.addToMenu();
-  const pastel = new Flavors("/src/pastel.jpg", "Pastel");
+  const pastel = new Flavors("src/pastel.jpg", "Pastel");
   pastel.addToMenu();
-  const assorted = new Flavors("/src/assorted.jpg", "Assorted");
+  const assorted = new Flavors("src/assorted.jpg", "Assorted");
   assorted.addToMenu();
-  const fruit = new Flavors("/src/fruit.jpg", "Fruit");
+  const fruit = new Flavors("src/fruit.jpg", "Fruit");
   fruit.addToMenu();
-  const sugar = new Flavors("/src/sugar.jpg", "Sugar");
+  const sugar = new Flavors("src/sugar.jpg", "Sugar");
   sugar.addToMenu();
-  const coconut = new Flavors("/src/coconut.jpg", "Coconut");
+  const coconut = new Flavors("src/coconut.jpg", "Coconut");
   coconut.addToMenu();
-  const cinnamon = new Flavors("/src/cinnamon.jpg", "Cinnamon");
+  const cinnamon = new Flavors("src/cinnamon.jpg", "Cinnamon");
   cinnamon.addToMenu();
 }
 
